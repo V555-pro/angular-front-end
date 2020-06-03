@@ -31,7 +31,7 @@ export class OrderService {
   }
 
   cancelOrder(order): Observable<Order> {
-    return this.http.post(API_URL + '/movies', order,
+    return this.http.post(API_URL + '/orders', order,
       new RequestOptions({})
     ).map(res => res.json());
   }
